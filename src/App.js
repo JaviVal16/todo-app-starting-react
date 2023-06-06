@@ -7,6 +7,7 @@ import { TodoItem } from './TodoItem';
 import { AddTodoBtn } from './AddTodoBtn';
 import { AlertCompleted } from './AlertCompleted';
 
+
 const exampleTodos = [
   { text: 'Completar curso React', completed: true },
   { text: 'Lavar los trastes', completed: false },
@@ -41,7 +42,10 @@ function App() {
     const allCompleted = newTodos.filter(
       element => element.completed === false
     )
-    return allCompleted;
+    let x;
+    allCompleted.length === 0 ? x = true : x = false;
+
+    return x;
   }
 
   const todoDeleted = (id) => {
@@ -75,7 +79,7 @@ function App() {
       </TodoList>
 
       <AlertCompleted
-        allCompleted={() => allCompleted()}
+        allCompleted={allCompleted()}
       />
 
       <AddTodoBtn />

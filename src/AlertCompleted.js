@@ -1,22 +1,16 @@
-import React, { useState } from 'react';
-import SweetAlert2 from 'react-sweetalert2';
+import './AlertCompleted.css'
 
 function AlertCompleted(props) {
-    const [swalProps, setSwalProps] = useState({});
-    if (props.AlertCompleted) {
+    console.log(props.allCompleted);
+    let className = 'fa-solid fa-square-xmark'
+    if (props.allCompleted) {
         return (
-            <div>
-                <button onClick={() => {
-                    setSwalProps({
-                        show: true,
-                        title: 'Basic Usage',
-                        text: 'Hello World',
-                    });
-                }}>
-                    Open
-                </button>
-
-                <SweetAlert2 {...swalProps} />
+            <div className="popUpCompleted">
+                <h2 className='popUpCompleted-h2' >¡¡¡FELICIDADES HAZ COMPLETADO TODAS TUS TAREAS!!!</h2>
+                <i
+                    className={className}
+                    onClick={ }
+                ></i>
             </div>
         );
     }
