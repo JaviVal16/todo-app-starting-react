@@ -9,7 +9,6 @@ function AlertCompleted(props) {
                 <h2 className='popUpCompleted-h2' >¡¡¡FELICIDADES HAZ COMPLETADO TODAS TUS TAREAS!!!</h2>
                 <i
                     className={className}
-                    onClick={ }
                 ></i>
             </div>
         );

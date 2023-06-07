@@ -7,7 +7,7 @@ function AddTodoBtn() {
             onClick={
                 (event) => {
                     console.log('Haz dado click')
-                    console.log(event)
+                    console.log(event.target)
                 }
             }
         >+</button>
