@@ -18,7 +18,7 @@ import { useLocalStorage } from './useLocaclStorage';
 // ];
 
 // localStorage.setItem('TODOS_V1', JSON.stringify(exampleTodos));
-// localStorage.removeItem('TAREAS_V1');
+// localStorage.removeItem('TODOS_V1');
 
 function App() {
   const [todos, saveTodos] = useLocalStorage('TODOS_V1', []);
