@@ -1,8 +1,15 @@
+import React from 'react';
 import './StatusTodosMessage.css';
+import { TodoContext } from '../Context';
 
-function StatusTodosMessage({ total, completed }) {
+function StatusTodosMessage() {
+    const {
+        completedTodos,
+        totalTodos
+    } = React.useContext(TodoContext);
+
     return (
-        <h1>{completed} TODOS HECHOS DE {total}</h1>
+        <h1>{completedTodos} TODOS HECHOS DE {totalTodos}</h1>
     );
 }
 

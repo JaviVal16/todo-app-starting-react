@@ -1,8 +1,12 @@
 import React from 'react';
 import './TodosSearchBox.css';
+import { TodoContext } from '../Context';
 
-function TodosSearchBox({ searchValue, setSearchValue }) {
-
+function TodosSearchBox() {
+    const {
+        searchValue,
+        setSearchValue
+    } = React.useContext(TodoContext);
     return (
         <input
             className='todosSearchBox'
