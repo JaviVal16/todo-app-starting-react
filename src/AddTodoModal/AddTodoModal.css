@@ -1,0 +1,70 @@
+.modalMask {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #00000097;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+}
+
+.modalCard {
+    position: fixed;
+    top: calc(50% - 100px);
+    left: calc(50% - 250px);
+    width: 500px;
+    height: 200px;
+    border-radius: 20px;
+    backdrop-filter: blur(25px);
+    border: 5px solid #ffe1007c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.modalClose {
+    color: #fff;
+    bottom: -14px;
+    right: -14px;
+}
+
+.modalLabel {
+    color: #fff;
+    font-size: 25px;
+}
+
+.modalInput {
+    font-size: 15px;
+    text-align: center;
+    color: #fff;
+    width: 80%;
+    background: none;
+    border: none;
+    border-bottom: 3px solid #fff;
+    font-weight: 600;
+}
+
+.modalInput:focus {
+    border-bottom: 3px solid #fff;
+    outline: none;
+}
+
+.modalBtn {
+    font-size: 15px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: 700;
+    color: #fff;
+    background: none;
+    border: 2px solid #ffe1007c;
+    border-radius: 10px;
+}
+
+.modalBtn:hover {
+    background-color: #ffe1007c;
+    scale: 1.1;
+}

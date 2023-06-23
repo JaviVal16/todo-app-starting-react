@@ -9,6 +9,7 @@ import { LoadingError } from '../LoadingError';
 import { FirstTodo } from '../FirstTodo';
 import { TodoContext } from '../Context';
 import { Modal } from '../Modal';
+import { AddTodoModal } from '../AddTodoModal';
 import React from 'react';
 
 function AppUI() {
@@ -20,7 +21,7 @@ function AppUI() {
         todoCompleted,
         todoDeleted,
         openModal,
-        setOpenModal
+        totalTodos
     } = React.useContext(TodoContext);
     return (
         <>
@@ -30,7 +31,7 @@ function AppUI() {
             <TodoList>
                 {loading && <LoadingTodos />}
                 {error && <LoadingError />}
-                {(!loading && searchedTodos.length === 0) && <FirstTodo />}
+                {(!loading && totalTodos === 0) && <FirstTodo />}
                 {searchedTodos.map(element => (
                     <TodoItem
                         key={element.text}
@@ -48,7 +49,7 @@ function AppUI() {
 
             {openModal && (
                 <Modal>
-                    Lograste teletrasportar el texto
+                    <AddTodoModal />
                 </Modal>
             )}
         </>
