@@ -1,5 +1,5 @@
 {
-  "name": "platzi-intro-react-base",
+  "name": "Javier-Alonso-Intro-to-React",
   "version": "0.1.0",
   "dependencies": {
     "react": "^18",
@@ -12,6 +12,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -30,5 +32,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "homepage": "htts://JaviVal16.github.io/todo-app-starting-react",
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
