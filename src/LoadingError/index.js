@@ -4,7 +4,7 @@ import './LoadingError.css';
 function LoadingError() {
 
     return (
-        <p>CORREEEEEEEEEE</p>
+        <p>Lo sentimos ha ocurrido un error</p>
     );
 }
 
