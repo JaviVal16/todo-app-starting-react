@@ -31,7 +31,7 @@ function StatusTodosMessage(props) {
         <header className='satusHeader'>
             {showMessageCompleted()}
             <h1 className='satusHeader-message-completed'>¡FELICIDADES! <p>HAS COMPLETSDO TODAS TUS ACTIVIDADES</p></h1>
-            <h1 className='satusHeader-message'>ACTIVIDADES REALIZADAS</h1>
+            <h2 className='satusHeader-message'>ACTIVIDADES REALIZADAS</h2>
             <div className='satusHeader-progress'>
                 <h2 className='satusHeader-progress-count'>{completedTodos} / {totalTodos}</h2>
                 <div className='satusHeader-progress_inner' style={{ width: `${progress()}%` }}></div>
