@@ -1,0 +1,43 @@
+.satusHeader {
+    color: #10170d;
+    text-align: center;
+    margin: 1.5ch 2ch 4ch;
+    font-size: .9rem;
+}
+
+.satusHeader-message-completed {
+    display: none;
+    color: #000;
+    text-shadow: 1px 1px 2px #fff, 0 0 1em #FFD700, 0 0 0.2em #FFD700;
+}
+
+.satusHeader-message-completed p {
+    margin-top: 0;
+}
+
+.satusHeader-message {
+    margin-bottom: .1em;
+}
+
+.satusHeader-progress,
+.satusHeader-progress_inner {
+    height: 3ch;
+    border-radius: 1em;
+}
+
+.satusHeader-progress {
+    position: sticky;
+    width: 100%;
+    background-color: #000000a5;
+}
+
+.satusHeader-progress-count {
+    position: absolute;
+    color: #e9f1e5;
+    top: -70%;
+    right: 43%;
+}
+
+.satusHeader-progress_inner {
+    background-color: #7fb888;
+}

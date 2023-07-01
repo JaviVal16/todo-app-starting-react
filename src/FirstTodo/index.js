@@ -1,10 +1,15 @@
 import React from 'react';
 import './FirstTodo.css';
+import { NothingIcon } from './NothingIcon';
 
 function FirstTodo() {
 
     return (
-        <p>Crea tu rpimer TODO</p>
+        <div className='messageDiv'>
+            <h2>No exisite ninguna actividad pendiente</h2>
+            <NothingIcon />
+            <div className='ondaBtn'></div>
+        </div>
     );
 }
 

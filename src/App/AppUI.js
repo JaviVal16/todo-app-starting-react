@@ -3,7 +3,6 @@ import { TodosSearchBox } from '../TodosSearchBox';
 import { TodoList } from '../TodoList';
 import { TodoItem } from '../TodoItem';
 import { AddTodoBtn } from '../AddTodoBtn';
-import { AlertCompleted } from '../AlertCompleted';
 import { LoadingTodos } from '../LoadingTodos';
 import { LoadingError } from '../LoadingError';
 import { FirstTodo } from '../FirstTodo';
@@ -21,11 +20,14 @@ function AppUI() {
         todoCompleted,
         todoDeleted,
         openModal,
-        totalTodos
+        totalTodos,
+        allCompleted
     } = React.useContext(TodoContext);
     return (
         <>
-            <StatusTodosMessage />
+            <StatusTodosMessage
+                allCompleted={() => allCompleted()}
+            />
             <TodosSearchBox />
 
             <TodoList>
@@ -42,8 +44,6 @@ function AppUI() {
                     />
                 ))}
             </TodoList>
-
-            <AlertCompleted />
 
             <AddTodoBtn />
 

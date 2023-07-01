@@ -9,15 +9,22 @@ function AddTodoModal() {
     } = React.useContext(TodoContext);
 
     const [todoValue, setTodoValue] = React.useState('');
+    const modalAdd = document.querySelector('.modalCard');
 
     const onSubmit = (event) => {
         event.preventDefault();
-        addTodo(todoValue);
-        setOpemModal(false)
+        setTimeout(() => {
+            addTodo(todoValue);
+            setOpemModal(false)
+        }, 700);
+        modalAdd.classList.add('modalCardSubmit');
     }
 
     const onClose = () => {
-        setOpemModal(false)
+        setTimeout(() => {
+            setOpemModal(false);
+        }, 700);
+        modalAdd.classList.add('modalCardOut');
     }
 
     const onChange = (event) => {

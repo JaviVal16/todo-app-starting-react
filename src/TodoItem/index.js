@@ -10,7 +10,7 @@ function TodoItem(props) {
             ></i>
             <p className='todoItem-text' >{props.text}</p>
             <i
-                className={`fa-solid fa-square-xmark ${props.completed && "xmark-completed"} `}
+                className="fa-solid fa-square-xmark"
                 onClick={props.delete}
             ></i>
         </li>

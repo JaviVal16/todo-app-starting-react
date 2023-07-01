@@ -1,12 +1,14 @@
 .todosSearchBox {
+    text-align: center;
     border: none;
     background-color: transparent;
-    border-bottom: 3px solid #ffe1007c;
-    font-size: 20px;
+    border-bottom: 3px solid #7fb8a5;
+    font-size: 1.5em;
+    color: #000;
+    margin-bottom: 2ch;
 }
 
 .todosSearchBox:focus {
-    border-bottom: 3px solid #ffe100;
     outline: none;
-    scale: 1.2;
+    scale: 1.1;
 }

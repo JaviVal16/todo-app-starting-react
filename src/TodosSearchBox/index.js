@@ -10,7 +10,7 @@ function TodosSearchBox() {
     return (
         <input
             className='todosSearchBox'
-            placeholder="Escribe una nueva tarea"
+            placeholder="¿Perdiste una actividad?"
             value={searchValue}
             onChange={
                 (event) => {

@@ -1,7 +1,6 @@
 .loader {
-    height: 150px;
     position: relative;
-    top: 30vh;
+    margin: 5ch;
 }
 
 .loader:before,
@@ -13,7 +12,7 @@
     position: relative;
     margin: 10px auto;
     border-radius: 50%;
-    color: #000;
+    color: #F65151;
     background: currentColor;
     box-shadow: 0 50px, 0 100px;
     animation: left 1s infinite ease-in-out;
@@ -41,7 +40,7 @@
     0%,
     100% {
         transform: translate(15px);
-        color: #fff;
+        color: #10170d;
     }
 
     50% {
