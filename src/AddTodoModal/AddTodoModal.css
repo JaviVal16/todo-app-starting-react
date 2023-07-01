@@ -81,11 +81,11 @@
     }
 
     50% {
-        transform: translate(-50%, -50%) scale(1.5, .5);
+        transform: translate(-50%, -50%) scale(1.2, .8);
     }
 
     100% {
-        transform: translate(-50%, 200%) scale(.5, 1.5);
+        transform: translate(-50%, 200%) scale(.8, 1.2);
     }
 }
 

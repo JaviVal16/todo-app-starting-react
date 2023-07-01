@@ -16,7 +16,7 @@ function AddTodoModal() {
         setTimeout(() => {
             addTodo(todoValue);
             setOpemModal(false)
-        }, 700);
+        }, 800);
         modalAdd.classList.add('modalCardSubmit');
     }
 
