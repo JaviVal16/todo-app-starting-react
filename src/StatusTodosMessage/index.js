@@ -12,8 +12,10 @@ function StatusTodosMessage(props) {
         const completedMessage = document.querySelector('.satusHeader-message-completed');
         const normalMessage = document.querySelector('.satusHeader-message');
         if (props.allCompleted()) {
-            completedMessage.style.display = "block";
-            normalMessage.style.display = "none";
+            if (normalMessage != null) {
+                completedMessage.style.display = "block";
+                normalMessage.style.display = "none";
+            }
         } else {
             if (normalMessage != null) {
                 completedMessage.style.display = "none";
