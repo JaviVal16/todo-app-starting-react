@@ -25,10 +25,13 @@ function AppUI() {
     } = React.useContext(TodoContext);
     return (
         <>
-            <StatusTodosMessage
+
+            {(!loading && totalTodos !== 0) && <StatusTodosMessage
                 allCompleted={() => allCompleted()}
-            />
-            <TodosSearchBox />
+            />}
+
+            {(!loading && totalTodos !== 0) && <TodosSearchBox />}
+
 
             <TodoList>
                 {loading && <LoadingTodos />}
@@ -45,7 +48,9 @@ function AppUI() {
                 ))}
             </TodoList>
 
-            <AddTodoBtn />
+            {!loading && <AddTodoBtn />}
+
+
 
             {openModal && (
                 <Modal>

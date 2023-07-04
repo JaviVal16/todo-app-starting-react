@@ -5,7 +5,46 @@
     align-items: center;
 }
 
+.messageDiv-Nothing {
+    text-decoration: underline solid .5em var(--main-red-color);
+}
+
+.messageDiv-Clic {
+    text-decoration: underline solid .5em var(--second-green-color);
+    margin: .5em 1em;
+}
+
+@media (max-width: 990px) {
+    .messageDiv-h2 {
+        margin: 1em;
+        margin-bottom: 0;
+    }
+
+    .icon-span-flecha {
+        animation: floating 2s ease-in-out infinite;
+    }
+
+    @keyframes floating {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(1em);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+}
+
 @media (min-width: 992px) {
+    .icon-span-flecha {
+        display: none;
+    }
+
     .ondaBtn {
         position: fixed;
         right: 45px;
@@ -30,12 +69,12 @@
     }
 
     .ondaBtn::after {
-        background: #7fb8a5;
+        background: var(--main-green-color);
         animation-delay: .5s;
     }
 
     .ondaBtn::before {
-        background: #000000;
+        background: var(--black);
         animation-delay: .7s;
     }
 

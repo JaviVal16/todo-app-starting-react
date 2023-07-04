@@ -41,10 +41,10 @@ function AddTodoModal() {
                             onClose
                         }
                     ></i>
-                    <label className='modalLabel'> ¿Que pendiente tenemos?</label>
+                    <label className='modalLabel'> ¿Que actividad haremos?</label>
                     <input
                         className='modalInput'
-                        placeholder='Escribe un nuevo pendiente'
+                        placeholder='Escribe una nueva actividad'
                         required
                         value={todoValue}
                         onChange={

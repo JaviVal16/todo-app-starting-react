@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   /* background-color: #313552; */
-  background-color: #e9f1e5;
+  background-color: var(--main-bg-color);
   font-family: 'Rubik', sans-serif;
 }
 
@@ -12,4 +12,14 @@ body {
   align-items: center;
   position: relative;
   height: 100vh;
+  --main-bg-color: #e9f1e5;
+  --second-bg-color: #f8fbfa;
+  --main-green-color: #7fb8a5;
+  --main-red-color: #F65151;
+  --main-black-color: #10170d;
+  --main-yellow-color: #FFD700;
+  --second-green-color: #7fb8a588;
+  --black: #000;
+  --white: #fff;
+
 }

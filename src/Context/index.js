@@ -25,6 +25,7 @@ function TodoProvider({ children }) {
     const addTodo = (newtodo) => {
         const newTodos = [...todos];
         newTodos.push({ text: newtodo, completed: false });
+        newTodos.sort((x, y) => x.completed - y.completed);
         saveTodos(newTodos);
     }
 
@@ -35,6 +36,7 @@ function TodoProvider({ children }) {
             (element) => element.text === id
         );
         newTodos[indexTarea].completed = true;
+        newTodos.sort((x, y) => x.completed - y.completed);
         saveTodos(newTodos);
     }
 
@@ -44,6 +46,7 @@ function TodoProvider({ children }) {
             (element) => element.text === id
         );
         newTodos.splice(indexTodo, 1);
+        newTodos.sort((x, y) => x.completed - y.completed);
         saveTodos(newTodos);
     }
 

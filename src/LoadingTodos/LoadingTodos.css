@@ -10,9 +10,9 @@
     height: 15px;
     display: block;
     position: relative;
-    margin: 10px auto;
+    margin: 1em auto;
     border-radius: 50%;
-    color: #F65151;
+    color: var(--main-red-color);
     background: currentColor;
     box-shadow: 0 50px, 0 100px;
     animation: left 1s infinite ease-in-out;

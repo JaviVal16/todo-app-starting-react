@@ -96,7 +96,10 @@
 }
 
 .modalLabel {
+    border-radius: 1em;
+    width: 16ch;
     color: #fff;
+    background-color: #7fb8a55d;
     font-size: 1.6em;
     margin: 1ch;
 }
@@ -111,6 +114,10 @@
     border-bottom: 3px solid #fff;
     font-weight: 600;
     margin-bottom: 3ch;
+}
+
+.modalInput::placeholder {
+    color: var(--white);
 }
 
 .modalInput:focus {

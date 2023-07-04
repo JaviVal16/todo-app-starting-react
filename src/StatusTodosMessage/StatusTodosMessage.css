@@ -1,5 +1,5 @@
 .satusHeader {
-    color: #10170d;
+    color: var(--main-black-color);
     text-align: center;
     margin: 1.5ch 2ch 4ch;
     font-size: .9rem;
@@ -7,8 +7,8 @@
 
 .satusHeader-message-completed {
     display: none;
-    color: #000;
-    text-shadow: 1px 1px 2px #fff, 0 0 1em #FFD700, 0 0 0.2em #FFD700;
+    color: var(--black);
+    text-decoration: underline solid .4em var(--main-yellow-color);
 }
 
 .satusHeader-message-completed p {
@@ -39,5 +39,5 @@
 }
 
 .satusHeader-progress_inner {
-    background-color: #7fb888;
+    background-color: var(--main-green-color);
 }
